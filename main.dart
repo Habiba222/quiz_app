@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final List<Map<String, dynamic>> _questions = const [
     {
-      'questionText': 'what is yout favourite color?',
+      'questionText': 'what is your favourite color?',
       'answer': [
         {'text': 'Black', 'score': '10'},
         {'text': 'Red', 'score': '5'},
@@ -26,16 +26,16 @@ class _MyAppState extends State<MyApp> {
       ],
     },
     {
-      'questionText': 'what is yout favourite Animal?',
+      'questionText': 'what is your favourite Animal?',
       'answer': [
-        {'taxt': 'Cats', 'score': '3'},
+        {'text': 'Cats', 'score': '3'},
         {'text': 'Dogs', 'score': '11'},
         {'text': 'Snakes', 'score': '5'},
         {'text': 'Loins', 'score': '9'}
       ],
     },
     {
-      'questionText': 'what is yout favourite person',
+      'questionText': 'what is your favourite person',
       'answer': [
         {'text': 'Habiba', 'score': '0'},
         {'text': 'Habiba', 'score': '0'},
@@ -79,3 +79,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
