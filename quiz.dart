@@ -21,11 +21,13 @@ class Quiz extends StatelessWidget {
         Question(
           questions[questionIndex]['questionText'],
         ),
-        ...(questions[questionIndex]['answers'] as List<Map<String, dynamic>>)
+        ...(questions[questionIndex]['answer'] as List<Map<String, dynamic>>)
             .map((answer) {
-          return Answer(() => answerQuestion(answer['score']), answer['text']);
+          return Answer(
+              () => answerQuestion(int.parse(answer['score'])), answer['text']);
         }).toList()
       ],
     );
   }
 }
+
